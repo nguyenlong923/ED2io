@@ -30,8 +30,8 @@ if (length(args)==0) {
 }
 run.type    = arg.runtype
 
-here           = getwd()     # Current directory.
-there          = paste(here,"/../",run.type[1],sep='')     # Directory where analyses/history are
+here           = "/Users/longuyen/EDmodel/ED2io/Marcos_Rutils"     # Current directory.
+there          = "/Users/longuyen/EDmodel/ED2_output/paracou_hydro0"     # Directory where analyses/history are
 srcdir         = here  # Source  directory.
 outroot        = paste(there,"/figures",sep='')  # Directory for figures
 cat("here:",here,"\n")
@@ -44,7 +44,7 @@ cat("outroot:",outroot,"\n")
 #----- Time options. ----------------------------------------------------------------------#
 monthbeg       = 01   # First month to use
 yearbeg        = NA    # First year to consider NA --> min in analy folder
-yearend        = NA    # Maximum year to consider  NA --> max in analy folder
+yearend        = 2009    # Maximum year to consider  NA --> max in analy folder
 reload.data    = T         # Should I reload partially loaded data?
 #sasmonth.short = c(2,5,8,11)  # Months for SAS plots (short runs)
 sasmonth.short = c(2,6,10)  # Months for SAS plots (short runs)
